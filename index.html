@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Chill Out</title>
+		<style>
+			body, html {
+				overflow: hidden;
+			}
+			marquee {
+				position: fixed;
+				top: calc(100% - 250px);
+				z-index: 300;
+				font-size: 200px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+			}
+			.ruok {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate3d(-60%, -30%, 0);
+				   -moz-transform: translate3d(-60%, -30%, 0);
+				        transform: translate3d(-60%, -30%, 0);
+				animation: font-size-animation 9s ease-in-out infinite;
+				z-index: 200;
+			}
+			@keyframes font-size-animation {
+				0% {
+					opacity: 0;
+					height: 960px;
+					width:  9880px;
+				}
+				70% {
+					opacity: 1;
+				}
+				90% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+					height: 0;
+					width:  0;
+				}
+			}
+			.grow-1, .grow-2 {
+				position: fixed;
+				height: 200%;
+				width: 200%;
+				left: -50%;
+				top: -50%;
+			}
+			.grow-1 { animation: grow-animation-1 5s linear infinite; }
+			.grow-2 { animation: grow-animation-2 5s linear infinite; }
+			@keyframes grow-animation-1 {
+				0% {
+					height: 200%;
+					width: 200%;
+					left: -50%;
+					top: -50%;
+					z-index: 0;
+				}
+				100% {
+					height: 0;
+					width: 0;
+					left: 50%;
+					top: 50%;
+					z-index: 100;
+				}
+			}
+			@keyframes grow-animation-2 {
+				0% {
+					height: 100%;
+					width: 100%;
+					left: 0%;
+					top: 0%;
+					z-index: 50;
+				}
+				49% {
+					height: 0;
+					width: 0;
+					left: 50%;
+					top: 50%;
+					z-index: 100;
+				}
+				50% {
+					height: 0;
+					width: 0;
+					left: 50%;
+					top: 50%;
+					z-index: 1;
+				}
+				51% {
+					height: 200%;
+					width: 200%;
+					left: -50%;
+					top: -50%;
+					z-index: 1;
+				}
+				100% {
+					height: 100%;
+					width: 100%;
+					left: 0%;
+					top: 0%;
+					z-index: 50;
+				}
+			}
+		</style>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-66065000-2', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<iframe src="https://www.youtube.com/embed/4un7Jedpicg?autoplay=1" style="display: none;"></iframe>
+		<img class="grow-1" src="12038319_10153684513448537_8053260678910935019_n.jpg">
+		<img class="grow-2" src="12038319_10153684513448537_8053260678910935019_n.jpg">
+		<marquee>chill out yall</marquee>
+		<img class="ruok" src="10286887_10206909929202499_1323587315994989288_o.jpg">
+	</body>
+</html>
